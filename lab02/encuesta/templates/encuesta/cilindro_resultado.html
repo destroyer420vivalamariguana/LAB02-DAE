@@ -1,0 +1,8 @@
+<h2>Resultado del Cálculo</h2>
+{% if volumen is not None %}
+El volumen del cilindro calculado es {{ volumen }} metros cúbicos.
+{% else %}
+Los datos ingresados no son válidos.
+{% endif %}
+<br>
+<a href="{% url 'encuesta:cilindro' %}">Volver al formulario</a>

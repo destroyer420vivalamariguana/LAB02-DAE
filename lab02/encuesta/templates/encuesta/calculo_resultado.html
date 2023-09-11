@@ -1,0 +1,8 @@
+<h2>Resultado</h2>
+{% if resultado is not None %}
+La {{ operacion }} de {{ num1 }} y {{ num2 }} es igual a {{ resultado }}.
+{% else %}
+Operación no válida.
+{% endif %}
+<br>
+<a href="{% url 'encuesta:calculo' %}">Volver al formulario</a>
